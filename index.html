@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Yummy</title>
+  </head>
+  <body>
+    <main>
+      <!-- nav
+    =================== -->
+      <nav class="d-flex">
+        <div class="nav-tab text-white">
+          <div class="nav-content d-flex flex-column justify-content-between">
+            <ul>
+              <li id="search">Search</li>
+              <li id="categories">Categories</li>
+              <li id="area">Area</li>
+              <li id="ingredients">Ingredients</li>
+              <li id="contact-us">Contact Us</li>
+            </ul>
+            <div class="content-footer">
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-solid fa-globe"></i>
+              <p>
+                Copyright Â© 2019 All Rights
+                <br />
+                Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="nav-header text-center px-2 py-4 d-flex flex-column justify-content-between"
+        >
+          <figure>
+            <img src="./style/images/logo (1).png" alt="" class="logo" />
+          </figure>
+          <div class="close">
+            <i class="fa-solid fa-bars fa-3x" id="showBtn"></i>
+          </div>
+          <div class="navHeader-footer d-flex flex-column">
+            <i class="fa-solid fa-globe pb-1"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- search 
+    ===================-->
+      <section class="search section d-none">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-2 ms-5 ms-md-0 pt-5">
+            <div class="mb-3 col">
+              <input
+                type="email"
+                class="form-control bg-transparent text-white"
+                id="exampleFormControlInput1"
+                placeholder="Search By Name"
+              />
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="email"
+                class="form-control bg-transparent text-white"
+                id="exampleFormControlInput2"
+                maxlength="1"
+                placeholder="Search By First Letter"
+              />
+            </div>
+          </div>
+          <ul class="search-list list-unstyled d-none">
+            <li class="alert alert-info text-center m-2 p-1">There are no meals matching your search</i>
+          </ul>
+            <div class="search-contain row flex-wrap py-5">
+            </div>
+        </div>
+      </section>
+      <!-- Categories 
+    ===================-->
+      <section class="categories section d-none">
+        <div class="container">
+          <div class="category-content row py-5 g-4">
+          </div>
+        </div>
+      </section>
+      <!-- Area 
+    ===================-->
+      <section class="area section d-none">
+        <div class="container">
+          <div class="areas-contain row py-5">
+            
+          </div>
+        </div>
+      </section>
+      <!-- Ingredients
+    ===================-->
+      <section class="ingredients section d-none">
+        <div class="container">
+          <div class="ingredients-contain row py-5">
+          </div>
+        </div>
+      </section>
+      <!-- Contact Us
+    ===================-->
+      <section class="contact-us  section  d-flex align-items-center d-none">
+        <div
+          class="container d-flex flex-column justify-content-center align-items-center h-100"
+        >
+          <div class="row row-cols-1 row-cols-md-2 ms-5 ms-md-0">
+            <div class="mb-3 col">
+              <input
+                type="text"
+                class="form-control"
+                id="validName"
+                placeholder="Enter Your Name"
+              />
+              <div class="nameAlert alert alert-danger d-none mt-2" role="alert">
+                Special characters and numbers not allowed and The maximum number of characters is 9 characters
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="email"
+                class="form-control"
+                id="validEmail"
+                placeholder="Enter Your Email"
+              />
+              <div class="emailAlert alert alert-danger d-none mt-2" role="alert">
+                Email not valid *exemple@yyy.zzz
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="text"
+                class="form-control"
+                id="validPhone"
+                placeholder="Enter Your Phone"
+              />
+              <div class="PhoneAlert alert alert-danger d-none mt-2" role="alert">
+                Enter valid Phone Number
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="number"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="Enter Your Age"
+              />
+              <div class="alert alert-danger d-none mt-2" role="alert">
+                Enter valid age
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="email"
+                class="form-control"
+                id="validPassword"
+                placeholder="Enter Your Password"
+              />
+              <div class="passwordAlert alert alert-danger d-none mt-2" role="alert">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+              </div>
+            </div>
+            <div class="mb-3 col">
+              <input
+                type="email"
+                class="form-control"
+                id="validRepassword"
+                placeholder="Repassword"
+              />
+              <div class="repasswordAlert alert alert-danger d-none mt-2" role="alert">
+                Enter valid password *Minimum eight characters, at least one letter and one number:*
+              </div>
+            </div>
+          </div>
+          <div class="submit">
+            <button type="button" class="btn btn-danger">submit</button>
+          </div>
+        </div>
+      </section>
+      <!-- meals
+    =================== -->
+      <section class="meals section">
+        <div class="container">
+          <div class="meal-contain row  flex-wrap py-5">
+          </div>
+        </div>
+      </section>
+      <!-- meal-details
+    =================== -->
+      <section class="meal-details section text-white py-5 d-none">
+        <div class="meal-data container">
+        </div>
+      </section>
+    </main>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/Jquery.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>

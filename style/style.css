@@ -1,0 +1,89 @@
+/* general */
+* {
+  box-sizing: border-box;
+}
+/* ******************* */
+/* main */
+body {
+  background-color: #0d0d0d;
+  width: 100%;
+}
+/* navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+}
+.nav-tab {
+  background-color: #0d0d0d;
+  padding: 1.5rem;
+  display: none;
+}
+.nav-content{
+    height: 100%;
+}
+.nav-content > ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav-content > ul > li {
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+.content > i {
+  cursor: pointer;
+}
+.nav-header {
+  background-color: #ffffff;
+}
+.logo {
+  width: 50px;
+}
+.nav-header > .close,
+.nav-header > .navHeader-footer {
+  cursor: pointer;
+}
+/* *********************** */
+/* search */
+.search>.container>.row>div>input::placeholder{
+    color: #acb2b7;
+}
+.search>.container>li{
+    color: #acb2b7;
+}
+/* *********************** */
+/* Categories */
+.category{
+    position: relative;
+    cursor: pointer;
+}
+.category:hover .category-layer{
+    transform: translateY(0%);
+}
+.category-layer{
+    background-color: rgba(250, 250, 250,.7);
+    position: absolute;
+    top:0;
+    right: 1rem;
+    bottom: 0;
+    left: 1rem;
+    transform: translateY(130%);
+    transition: transform .5s;
+}
+/* *********************** */
+/* Area */
+.area>.container>.row>.category{
+    color: #f9f6f6;
+}
+/* *********************** */
+/* ingredients */
+.ingredients>.container>.row>.category{
+    color: #f9f6f6;
+}
+/* *********************** */
+/* Contact Us */
+.contact-us{
+  min-height: 100vh;
+}
